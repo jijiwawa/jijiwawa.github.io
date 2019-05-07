@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+[TOC]
+## PCC 算法流程
+### 1
+分别获取用户u和v评分了的物品字典，形如：{u:[1,2,3,4,7],v:[2,4,5,6]...}
+$I_u$
+$I_v$
 
-You can use the [editor on GitHub](https://github.com/jijiwawa/jijiwawa.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### 2
+#### 2.1
+分别获取用户u和v评分了的物品的平均值，形如：{u:3.4,v:1.6,...}
+ave_u
+ave_v
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#### 2.2 
+求用户u和v共同评分了的物品集合
+$ret_dict = I_u \bigcap I_v$
 
-### Markdown
+### 3
+判断交集ret_dict是否为空
++ 空
++ 非空
+遍历ret_dict计算pcc
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### 4 使用的参数
+#### 4.1 用户评分的物品表
+#### 4.2 用户评分的物品的平均分
+#### 4.3 训练矩阵
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jijiwawa/jijiwawa.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+  
