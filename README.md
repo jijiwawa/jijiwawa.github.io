@@ -26,4 +26,10 @@ $ret_dict = I_u \bigcap I_v$
 #### 4.2 用户评分的物品的平均分
 #### 4.3 训练矩阵
 
+
+### python 拓展 C
+https://blog.csdn.net/weixin_34226706/article/details/86991937
+https://zhidao.baidu.com/question/199567340219173605.html
+
+
   
